@@ -1,0 +1,26 @@
+services:
+  catalog-db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: catalog
+      POSTGRES_USER: catalog
+      POSTGRES_PASSWORD: catalog
+    ports:
+      - "55433:5432"
+    volumes:
+      - catalog-data:/var/lib/postgresql/data
+
+  orders-db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: orders
+      POSTGRES_USER: orders
+      POSTGRES_PASSWORD: orders
+    ports:
+      - "55434:5432"
+    volumes:
+      - orders-data:/var/lib/postgresql/data
+
+volumes:
+  catalog-data:
+  orders-data:
