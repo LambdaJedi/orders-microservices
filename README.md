@@ -65,7 +65,4 @@ Planning lives in [`docs/agile`](docs/agile): product backlog with user stories 
 Sprint 1 plan, Definition of Done. Architecture decisions and known limitations are in
 [`docs/architecture.md`](docs/architecture.md).
 
-## AI assistance
 
-This project was scaffolded with Claude (Anthropic). I reviewed the code, ran the build and tests myself,
-and I can explain each design decision above.
